@@ -20,4 +20,4 @@ Ouvrir `index.html` dans un navigateur récent avec WebGL activé. Le jeu ne né
 
 Après avoir pris le volant, les boutons à l’écran permettent aussi d’accélérer, freiner et diriger en maintenant la pression.
 
-Le rendu est une interprétation low-poly légère, optimisée pour fonctionner directement depuis le fichier. WebGL doit être disponible dans le navigateur.
+Le jeu utilise un vrai rendu 3D WebGL. Si WebGL est désactivé ou indisponible, un message l'explique au lieu de basculer vers un jeu en 2D. La direction artistique est stylisée et légère : ce prototype n'a pas encore le rendu photoréaliste d'un jeu AAA.
