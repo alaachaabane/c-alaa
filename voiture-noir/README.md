@@ -8,9 +8,9 @@ Ouvrir `index.html` dans un navigateur récent avec WebGL activé. Le jeu ne né
 
 ## Commandes
 
-- **W / ↑** : accélérer
+- **Z / W / ↑** : accélérer (AZERTY, QWERTY ou flèche)
 - **S / ↓** : freiner
-- **A D / ← →** : diriger
+- **Q / A / D / ← →** : diriger (AZERTY et QWERTY)
 - **Espace** : frein à main
 - **C** : changer de caméra
 - **N** : changer l’ambiance lumineuse
