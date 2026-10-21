@@ -1,41 +1,35 @@
-# REAL DRIVE — prototype jouable
+# REAL DRIVE — prototype de conduite
 
-Un prototype de conduite 3D en monde ouvert, développé avec Three.js. Il propose une voiture contrôlable, une route côtière en boucle, un environnement généré dans la scène, des collisions, trois caméras et un HUD de conduite.
+REAL DRIVE est une première tranche jouable de jeu de conduite pour ordinateur. Le prototype est autonome : il ne télécharge aucune bibliothèque et peut être ouvert directement en double-cliquant sur `index.html`.
 
-## Lancer le jeu
+## Ce qui est jouable
 
-Le navigateur doit avoir accès à Internet pour charger Three.js depuis jsDelivr.
+- Route côtière sinueuse à génération continue, reliefs, mer, falaises, arbres, rochers, glissières et panneaux.
+- Voiture sportive originale dessinée avec carrosserie, vitrage, roues, feux et détails de cockpit.
+- Accélération, freinage, transfert latéral, perte d'adhérence sous la pluie, frein à main et glisse.
+- Circulation légère avec dépassements et contacts qui ralentissent la voiture.
+- Caméra poursuite, capot et cockpit ; compteur, rapports, régime moteur, mini-carte et score de glisse.
+- Son moteur synthétisé en temps réel, pluie activable et trois ambiances lumineuses.
+- Menu d'accueil, commandes, pause et repositionnement sur la route.
 
-Depuis ce dossier, lance un serveur web local :
+## Lancer
 
-```sh
-python3 -m http.server 8000
-```
-
-Puis ouvre [http://localhost:8000](http://localhost:8000).
+Ouvre `index.html` dans Safari, Chrome ou Edge. Le jeu fonctionne depuis `file://` et ne nécessite ni installation, ni serveur, ni accès Internet.
 
 ## Commandes
 
 | Touche | Action |
 | --- | --- |
 | W / ↑ | Accélérer |
-| S / ↓ | Freiner ou reculer |
+| S / ↓ | Freiner |
 | A / D / ← / → | Diriger |
-| Espace | Frein à main |
+| Espace | Frein à main et glisse |
 | C | Changer de caméra |
-| R | Repositionner la voiture sur la route |
+| M | Activer ou couper la pluie |
+| N | Changer l'ambiance lumineuse |
+| R | Se repositionner sur la route |
 | Échap | Pause |
 
-## Fonctionnalités implémentées
+## Portée et limites
 
-- Route côtière 3D en boucle, marquages, bas-côtés et glissières dans les virages en hauteur.
-- Modèle de voiture construit en meshes Three.js, roues animées, carrosserie métallique et éclairage.
-- Accélération, freinage, direction, inertie, frottement, perte d'adhérence hors route et frein à main.
-- Détection de collision avec les éléments de décor et ralentissement à l'impact.
-- Caméras poursuite, capot et cockpit, compteur km/h, rapport, jauge de régime et mini-carte.
-- Menu de démarrage, pause, aide des commandes et remise sur la route.
-- Terrain, reliefs lointains, mer, végétation, rochers, maisons, brouillard, ombres et lumière directionnelle.
-
-## Limites actuelles
-
-Ce prototype est une base jouable, pas un jeu AAA. Il utilise une seule voiture originale, un circuit d'exploration, une physique arcade cohérente et des modèles géométriques procéduraux. La circulation, les courses, les intérieurs détaillés, le son moteur, la météo dynamique, les dégâts, la progression et la personnalisation ne sont pas encore implémentés.
+Le rendu utilise une projection perspective 2.5D en Canvas 2D dessinée dans un seul fichier, afin de démarrer de façon fiable par double-clic. Ce n'est pas encore un environnement 3D WebGL ni une simulation automobile de niveau AAA. Le modèle de conduite reste arcade. Les voitures sous licence, la circulation dense, les courses et circuits, les réglages mécaniques, les dégâts, une vraie météo, les piétons, la progression et le mode photo ne sont pas encore implémentés.
